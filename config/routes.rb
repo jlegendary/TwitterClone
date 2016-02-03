@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  
   # Define Root URL
   root 'pages#index'   # hash refers to method
   
