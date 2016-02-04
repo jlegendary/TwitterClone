@@ -9,7 +9,7 @@ Rails.application.routes.draw do
       #redefine where they're pointing to
   
   get '/home' => 'pages#home'    # this overrides the default routes
-  get '/profile' => 'pages#profile' 
+  get '/user/:id' => 'pages#profile' 
   get '/explore' => 'pages#explore'
 
   # The priority is based upon order of creation: first created -> highest priority.
