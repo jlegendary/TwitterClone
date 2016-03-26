@@ -18,6 +18,8 @@ class PagesController < ApplicationController
       # redirect to 404 (root for now)
       redirect_to root_path, :notice=> "User not found!"
     end
+    
+    @posts = Post.all # give every single post in database
   end
 
   # back-end code for pages/expore
